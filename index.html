@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Train Scheduler</title>
+  	<link rel="shortcut icon" href="https://www.iconexperience.com/_img/g_collection_png/standard/512x512/bullet_train.png" type="image/x-icon">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"> <!-- bootstrap -->
+	<script src="https://www.gstatic.com/firebasejs/4.1.2/firebase.js"></script> <!-- firebase -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.js"></script> <!-- moment -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.min.js"></script>  <!-- jquery -->
+</head>
+<body>
+  <div class="container container-fluid">
+        <div class="row">
+          <div class="col-md-12">
+              <div class="jumbotron" style="background-color:#337AB7">
+                  <h1 align="center" style="color:white">Train Station Scheduler</h1>
+              </div>
+          </div>
+        </div>
+        <div class="row">
+                  <div class="col-md-12">
+                    <div class="panel panel-default">
+                      <div class="panel-heading">Current Train Schedule</div>
+                        <div class="panel-body">
+                          <table class="table table-striped">
+                              <thead>
+                                <tr>
+                                  <th>Train Name</th>
+                                  <th>Destination</th>
+                                  <th>Frequency (mins)</th>
+                                  <th>Next Arrival</th>
+                                  <th>Minutes Away</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                              <!-- Add new rows of trains here in this tbody -->
+                              </tbody>
+                              </table>
+                        </div>
+                      </div>
+                  </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+              <div class="panel panel-default">
+                  <div class="panel-heading">Add Train</div>
+                      <div class="panel-body">
+                          <form class="form-group">
+                              <label>Train Name:</label>
+                                <input type="text" style="margin-bottom:10px" class="form-control" id="train-name" placeholder="Enter Train Name">
+                              <label>Destination:</label>
+                                <input type="text" style="margin-bottom:10px" class="form-control" id="destination" placeholder="Enter Train Destination">
+                              <label>First Train Time (in millitary time):</label>
+                                <input type="text" style="margin-bottom:10px" class="form-control" id="first-train" placeholder="HH:mm">
+                              <label>Frequency:</label>
+                                <input type="text" style="margin-bottom:10px" class="form-control" id="frequency" placeholder="in minutes">
+                              <button class="btn btn-info" id="submit" type="button">Submit</button>   
+                          </form>
+                      </div>
+              </div>
+          </div>
+        </div>
+</body>
+	<script type="text/javascript" src="app.js"></script>
+</html>
