@@ -1,3 +1,3 @@
 # Train Scheduler
 
-Link: https://conditionschange.github.io/Train-Scheduler/
+Live app here: https://conditionschange.github.io/Train-Scheduler/
